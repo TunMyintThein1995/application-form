@@ -1,0 +1,185 @@
+$primaryColor: #48787d;
+$secondaryColor: #FF6161;
+$whiteColor: #FFF;
+$btnColor: #1976d2;
+$errorColor: #d32f2f;
+$tdColor: #333;
+$border: 1px solid $primaryColor;
+$bgHover: rgba(25, 118, 210, 0.04);
+
+
+// Common Css
+a {
+  text-decoration: none;
+}
+
+a.btn-link {
+  text-decoration: underline;
+  color: $btnColor;
+}
+
+// Main Wrapper
+.main-wrap.MuiBox-root {
+  width: 100%;
+  padding: 65px 40px 30px;
+
+  .MuiBox-root {
+    padding: 50px 0 35px;
+
+    .MuiContainer-root {
+      padding: 0;
+    }
+  }
+}
+
+// Input And Label Common Code
+.MuiFormControl-root {
+  .MuiFormControl-root {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .MuiOutlinedInput-root {
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $primaryColor;
+      }
+    }
+
+    .MuiOutlinedInput-input {
+      padding: 10px 14px;
+    }
+  }
+
+  .MuiInputLabel-root {
+    &.Mui-focused {
+      color: $primaryColor;
+      font-weight: 600;
+    }
+  }
+
+  .MuiFormHelperText-root {
+    font-size: 0.85rem;
+    color: $errorColor;
+  }
+
+  .MuiFormGroup-root {
+    -webkit-flex-direction: unset;
+    -ms-flex-direction: unset;
+    flex-direction: unset;
+
+    .MuiButton-outlined {
+      margin-right: 20px;
+    }
+  }
+}
+
+// Form Group Code
+.MuiFormGroup-root {
+  .MuiButton-root {
+    width: 125px;
+    text-transform: none;
+  }
+
+  .MuiButton-outlined {
+    color: $primaryColor;
+    border: $border;
+
+    &:hover {
+      color: $whiteColor;
+      border: $border;
+      background-color: $primaryColor;
+    }
+  }
+
+  .MuiButton-contained {
+    background-color: $primaryColor;
+    border: $border;
+
+    &:hover {
+      color: $primaryColor;
+      background-color: $bgHover;
+    }
+  }
+}
+
+// Button Submit
+.MuiBox-root {
+  .MuiPaper-root.apply-form {
+    .MuiButton-root {
+      width: 125px;
+      text-transform: none;
+    }
+
+    .MuiButton-contained {
+      background-color: $primaryColor;
+    }
+  }
+
+  .MuiButton-containedSecondary {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+
+    &:hover {
+      color: $whiteColor;
+      background-color: $secondaryColor;
+    }
+  }
+}
+
+// Table Code
+.MuiTable-root {
+  .MuiTableHead-root {
+    .MuiTableRow-root {
+      .MuiTableCell-root {
+        font-weight: 600;
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .MuiTableBody-root {
+    .MuiTableRow-root {
+      .MuiTableCell-root {
+        color: $tdColor;
+      }
+    }
+  }
+}
+
+// List Code
+.lists {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-item: center;
+  -ms-flex-item-align-item: center;
+  margin-bottom: 25px;
+
+  .btn-add {
+    border: $border;
+    background-color: $primaryColor;
+    color: $whiteColor;
+  }
+
+  .MuiButton-root {
+    width: 125px;
+    text-transform: none;
+  }
+
+  .MuiButton-contained {
+    background-color: $primaryColor;
+
+    &:hover {
+      color: $primaryColor;
+      background-color: $bgHover;
+    }
+  }
+}
